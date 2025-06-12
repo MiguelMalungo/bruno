@@ -1,0 +1,53 @@
+/* Custom CSS overrides to fix white gap and navbar issues */
+
+/* Fix for white gap at top */
+body, html {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden;
+}
+
+/* Ensure navbar is fully transparent */
+.navbar.bg-transparent {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Ensure hero section starts at the very top */
+.hero-section {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  top: 0 !important;
+}
+
+/* Fix for video background */
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Fix for navbar toggler on mobile */
+.navbar-toggler {
+  border-color: rgba(255,255,255,0.5) !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Hero section landscape mode adjustments */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero-container {
+    padding-top: 30px !important;
+  }
+  
+  .hero-section {
+    align-items: flex-start !important;
+    padding-top: 20px !important;
+  }
+}

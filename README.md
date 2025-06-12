@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Sociedade Fontes & Hora Website
+
+A modern, responsive website for Sociedade Fontes & Hora, Lda, an agricultural and animal production company located in Lavra, Porto, Portugal. This website is built using React and styled with Bootstrap and Styled Components.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

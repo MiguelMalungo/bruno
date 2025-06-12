@@ -1,0 +1,77 @@
+/* Custom navbar toggle styling */
+.navbar-toggler {
+  border: none;
+  padding: 0.25rem 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+/* White hamburger icon when not scrolled */
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Dark green hamburger icon when scrolled */
+.navbar-light .navbar-toggler-icon,
+.scrolled .navbar-toggler-icon,
+.scrolled.navbar-dark .navbar-toggler-icon,
+.scrolled .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2826, 77, 46, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Ensure the burger icon is dark green when scrolled */
+.navbar.scrolled button.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2826, 77, 46, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Dropdown menu styling */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: auto;
+    max-width: 220px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 0 0 5px 5px;
+    z-index: 1000;
+  }
+
+  .navbar-nav {
+    text-align: right;
+  }
+
+  .scrolled .navbar-collapse {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Ensure burger menu is constrained to the right */
+  .navbar-toggler {
+    margin-left: auto;
+  }
+  
+  /* Fix for landscape mode */
+  @media (orientation: landscape) and (max-width: 991px) {
+    .navbar-collapse {
+      max-height: 200px;
+      overflow-y: auto;
+    }
+    
+    .navbar-toggler {
+      margin-right: 15px;
+      position: absolute;
+      right: 15px;
+      top: 20px;
+    }
+    
+    .container {
+      position: relative;
+    }
+  }
+}
