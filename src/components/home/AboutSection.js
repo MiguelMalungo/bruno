@@ -85,7 +85,7 @@ const AboutSection = () => {
         <Row className="align-items-center">
           <Col lg={6} md={12} className="order-lg-2 mb-5 mb-lg-0">
             <ImageWrapper>
-              <MainImage src="/farmer.png" alt="Agricultor" />
+              <MainImage src={process.env.PUBLIC_URL + '/farmer.png'} alt="Agricultor" />
               <BackgroundShape />
             </ImageWrapper>
           </Col>
