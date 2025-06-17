@@ -3,6 +3,8 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+
+
 const AboutSectionWrapper = styled.section`
   padding: 80px 0;
 `;
@@ -85,7 +87,7 @@ const AboutSection = () => {
         <Row className="align-items-center">
           <Col lg={6} md={12} className="order-lg-2 mb-5 mb-lg-0">
             <ImageWrapper>
-              <MainImage src={process.env.PUBLIC_URL + '/farmer.png'} alt="Agricultor" />
+              <MainImage src="../images/farmer.png" alt="Agricultor" />
               <BackgroundShape />
             </ImageWrapper>
           </Col>
